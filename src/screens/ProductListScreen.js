@@ -13,10 +13,12 @@ const ProductListScreen = ({ navigation }) => {
 
   const fetchProducts = async () => {
     try {
+      console.log('Fetching products from:', `${API_URL}/products`);
       const response = await axios.get(`${API_URL}/products`);
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
+      console.error('Error details:', error.response?.data || error.message);
     }
   };
 
