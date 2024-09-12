@@ -1,7 +1,7 @@
 {
-    "buildCommand": "npx expo export -p web",
+    "buildCommand": "npm install @expo/metro-runtime && npx expo export:web",
     "outputDirectory": "dist",
-    "devCommand": "expo",
+    "devCommand": "expo start",
     "cleanUrls": true,
     "framework": null,
     "rewrites": [

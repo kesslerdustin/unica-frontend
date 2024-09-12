@@ -27,6 +27,7 @@
           "include": ["@expo/vector-icons"]
         }
       }
-    }
+    },
+    "platforms": ["ios", "android", "web"]
   }
 }
